@@ -76,7 +76,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-gray-300 after:mx-auto after:transition-all transition-colors after:duration-300 hover:text-primary hover:after:w-full ${activeSection === link.href.substring(1)
+              className={`text-sm relative after:content-[''] after:block after:w-0 after:h-0.5 after:bg-primary after:mx-auto after:transition-all transition-colors after:duration-300 hover:text-primary hover:after:w-full ${activeSection === link.href.substring(1)
                 ? "after:w-full after:bg-primary text-primary"
                 : ""
                 }`}

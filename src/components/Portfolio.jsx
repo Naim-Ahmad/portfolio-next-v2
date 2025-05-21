@@ -55,21 +55,21 @@ export default function Portfolio() {
       demoLink: "https://zarasproperties.co.uk/",
       githubLink: "#",
     },
-  
+
   ]
 
   return (
     <section id="portfolio" className="py-20">
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-3 text-center">
-          <div>
-            <h2 className=" text-[3rem] sm:text-[4rem] font-bold text-white text-shadow-[var(--primary)_0px_0px_4px]">
-              PORTFOLIO
-            </h2>
-            <div className="relative inline-block text-center font-extrabold text-xl">
-              My Projects
-            </div>
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="space-y-2">
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">My Work</div>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Recent Projects</h2>
+            <div className="mx-auto h-1 w-20 bg-primary"></div>
           </div>
+          <p className="max-w-[700px] text-muted-foreground md:text-lg">
+            Here are some of my recent projects that showcase my skills and expertise.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">

@@ -9,13 +9,10 @@ export default function About() {
     <section id="about" className="py-20 bg-muted/30">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div>
-            <h2 className=" text-[3rem] sm:text-[4rem] font-bold text-white text-shadow-[var(--primary)_0px_0px_4px]">
-              ABOUT ME
-            </h2>
-            <div className="relative inline-block text-center font-extrabold text-xl">
-              know me better
-            </div>
+          <div className="space-y-2">
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About Me</div>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Know Me More</h2>
+            <div className="mx-auto h-1 w-20 bg-primary"></div>
           </div>
         </div>
 

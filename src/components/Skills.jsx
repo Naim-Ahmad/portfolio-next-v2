@@ -25,13 +25,17 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="py-10 text-center bg-black text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-[3rem] sm:text-[4rem] font-bold text-black text-shadow-[white_0px_0px_2px]">
-          SKILLS
-        </h2>
-        <div className="relative inline-block text-center font-extrabold text-xl mb-10">
-          Technical Skills
+        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+          <div className="space-y-2">
+            <div className="inline-block rounded-lg bg-muted px-3 text-black py-1 text-sm">My Skills</div>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What I Do</h2>
+            <div className="mx-auto h-1 w-20 bg-primary"></div>
+          </div>
+          <p className="max-w-[700px] text-muted-foreground md:text-lg">
+            I specialize in a range of technologies and skills to deliver high-quality web solutions.
+          </p>
         </div>
-        <Tabs defaultValue="Frontend" className="w-full">
+        <Tabs defaultValue="Frontend" className="w-full mt-6">
           <TabsList className="flex justify-center mx-auto mb-8 gap-4 bg-transparent">
             {categories.map((cat) => (
               <TabsTrigger

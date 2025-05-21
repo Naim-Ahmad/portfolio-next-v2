@@ -19,13 +19,7 @@ export default function Navbar() {
       const navBar = document.getElementById("navBar");
       const scrollPos = window.scrollY;
 
-      // Add/remove background to navbar based on scroll position
-      if (scrollPos > 250) {
-        navBar.classList.add("bg-black");
-      } else {
-        navBar.classList.remove("bg-black");
-      }
-
+  
       // Determine which section is currently in view
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
@@ -71,7 +65,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-6" id="navBar">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -100,7 +94,7 @@ export default function Navbar() {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="container md:hidden py-4 pb-6 px-4 md:px-6">
-          <nav className="flex flex-col space-y-4 ">
+          <nav className="flex flex-col space-y-4 " id="navBar">
             {navLinks.map((link) => (
               <Link
                 key={link.href}

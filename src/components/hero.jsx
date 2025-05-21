@@ -9,10 +9,10 @@ export default function Hero() {
   return (
     <section id="home" className="py-20 md:py-32 relative overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto relative z-10">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-3 items-center">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Web Developer</div>
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-5xl">
               Hello, I'm <TypeEffect titles={['Naim Ahmad', 'a full stack developer']}/>
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
@@ -64,7 +64,7 @@ export default function Hero() {
                 </svg>
               </Link>
               <Link href={personalInfo.facebook} className="text-muted-foreground hover:text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook-icon lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
               </Link>
             </div>
           </div>

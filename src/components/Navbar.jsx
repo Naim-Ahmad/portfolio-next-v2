@@ -2,6 +2,7 @@
 
 import logo from "@/assets/logo.jpg"
 import { Button } from "@/components/ui/button"
+import personalInfo from "@/data"
 import { Menu, X } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -82,7 +83,11 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-2">
-          <Button variant="outline">Download CV</Button>
+          <Button variant="outline" >
+            <Link href={personalInfo.resume} target="_blank" download>
+            Download CV
+            </Link>
+            </Button>
         </div>
 
         {/* Mobile Menu Button */}

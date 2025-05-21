@@ -1,4 +1,3 @@
-import naimWithLaptop from "@/assets/naim_using_pc-min.jpg"
 import { Button } from "@/components/ui/button"
 import personalInfo from "@/data"
 import { yearCountFrom } from "@/utilities/dateCountFrom"
@@ -23,7 +22,7 @@ export default function About() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center mt-12">
           <div className="relative">
             <div className="relative h-[500px] w-full overflow-hidden rounded-lg border-8 border-muted">
-              <Image src={naimWithLaptop} alt="About Me" fill className="object-cover" />
+              <Image src="/assets/naim_using_pc-min.jpg" alt="About Me" fill className="object-cover" />
             </div>
             <div className="absolute -bottom-5 -right-5 bg-primary text-primary-foreground p-4 rounded-lg shadow-lg">
               <p className="text-4xl font-bold">{yearCountFrom(personalInfo.careerStartDate)}+</p>

@@ -11,7 +11,7 @@ import { Toaster } from "@/components/ui/sonner";
 export default function Home() {
   return (
     <main>
-      <Toaster />
+      <Toaster richColors />
       <Navbar />
       <Hero />
       <About />

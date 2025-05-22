@@ -36,16 +36,24 @@ export default function SkillsSection() {
           </p>
         </div>
         <Tabs defaultValue="Frontend" className="w-full mt-6">
-          <TabsList className="flex justify-center mx-auto mb-8 gap-4 bg-transparent">
+          {/* <TabsList className="mx-auto rounded-full">
+            {categories.map((cat) => (
+              <TabsTrigger
+                key={cat}
+                value={cat}
+                className="data-[state=active]:bg-white data-[state=active]:text-black rounded-full px-3 cursor-pointer py-2 bg-[#222] text-white hover:bg-[#444] transition"
+              >
+                {cat}
+              </TabsTrigger>
+            ))}
+          </TabsList> */}
+          <TabsList className="mx-auto rounded-full mb-6">
+
             {categories.map((cat) => (
               <TabsTrigger
                 key={cat.key}
                 value={cat.key}
-                className="py-2 px-4 md:px-8 md:py-6 md:text-lg rounded-full font-semibold
-                  data-[state=active]:bg-white
-                  data-[state=active]:text-black
-                  data-[state=active]:shadow
-                  bg-[#222] text-white hover:bg-[#444] transition"
+                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-full px-3 cursor-pointer py-2"
               >
                 {cat.label}
               </TabsTrigger>

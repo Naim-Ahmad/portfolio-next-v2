@@ -41,8 +41,8 @@ export default function MessageForm() {
   return (
     <form ref={form} onSubmit={sendEmail} className="space-y-6">
       <div className="grid md:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <label htmlFor="name" className="text-sm font-medium">
+        <div>
+          <label htmlFor="name" className="text-sm font-medium mb-2 inline-block">
             Your Name
           </label>
           <Input
@@ -52,8 +52,8 @@ export default function MessageForm() {
             required
           />
         </div>
-        <div className="space-y-2">
-          <label htmlFor="email" className="text-sm font-medium">
+        <div>
+          <label htmlFor="email" className="text-sm font-medium mb-2 inline-block">
             Your Email
           </label>
           <Input
@@ -66,8 +66,8 @@ export default function MessageForm() {
         </div>
       </div>
 
-      <div className="space-y-2">
-        <label htmlFor="subject" className="text-sm font-medium">
+      <div>
+        <label htmlFor="subject" className="text-sm font-medium mb-2 inline-block">
           Subject
         </label>
         <Input
@@ -78,8 +78,8 @@ export default function MessageForm() {
         />
       </div>
 
-      <div className="space-y-2">
-        <label htmlFor="message" className="text-sm font-medium">
+      <div>
+        <label htmlFor="message" className="text-sm font-medium mb-2 inline-block">
           Your Message
         </label>
         <Textarea

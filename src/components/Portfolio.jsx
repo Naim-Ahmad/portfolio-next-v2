@@ -40,19 +40,17 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <Tabs defaultValue={categories[0]} className="w-full mt-12">
-          <TabsList className="flex justify-center mb-8 gap-4 bg-transparent mx-auto flex-wrap h-auto md:h-9 md:flex-nowrap">
+        <Tabs defaultValue={categories[0]} className="w-full mt-10">
+          {/* <TabsList className="grid w-full grid-cols-2">
+            <TabsTrigger value="account">Account</TabsTrigger>
+            <TabsTrigger value="password">Password</TabsTrigger>
+          </TabsList> */}
+          <TabsList className="mx-auto rounded-full">
             {categories.map((cat) => (
               <TabsTrigger
                 key={cat}
                 value={cat}
-                className="px-6 py-2 md:text-lg md:px-8 md:py-6 cursor-pointer rounded-full font-semibold
-                  data-[state=active]:bg-primary
-                  data-[state=active]:text-white
-                  shadow
-                  w-fit
-                  border-primary
-                  bg-white text-black hover:bg-primary hover:text-white transition"
+                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-full px-3 cursor-pointer py-2"
               >
                 {cat}
               </TabsTrigger>

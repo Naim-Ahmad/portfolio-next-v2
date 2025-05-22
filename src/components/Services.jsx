@@ -1,89 +1,103 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Code, Database, Figma, FileCode2, Globe, Layers } from "lucide-react"
+import { services as skills } from "@/data"
 
 export default function Services() {
-  const skills = [
-    {
-      icon: <FileCode2 className="h-10 w-10 text-primary" />,
-      title: "Frontend Development",
-      description:
-        "Building responsive and interactive user interfaces with React, Next.js, and modern CSS frameworks.",
-    },
-    {
-      icon: <Database className="h-10 w-10 text-primary" />,
-      title: "Backend Development",
-      description: "Creating robust server-side applications with Node.js, Express, and MongoDB.",
-    },
-    {
-      icon: <Code className="h-10 w-10 text-primary" />,
-      title: "JavaScript / TypeScript",
-      description: "Proficient in modern JavaScript and TypeScript for building scalable web applications.",
-    },
-    {
-      icon: <Layers className="h-10 w-10 text-primary" />,
-      title: "Full Stack Development",
-      description: "End-to-end development from database design to frontend implementation.",
-    },
-    {
-      icon: <Figma className="h-10 w-10 text-primary" />,
-      title: "UI/UX Design",
-      description: "Creating intuitive and visually appealing user interfaces and experiences.",
-    },
-    {
-      icon: <Globe className="h-10 w-10 text-primary" />,
-      title: "Web Performance",
-      description: "Optimizing websites for speed, accessibility, and search engine visibility.",
-    },
-  ]
+  
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 bg-black text-white">
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">My Skills</div>
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-black">My Skills</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What I Do</h2>
             <div className="mx-auto h-1 w-20 bg-primary"></div>
           </div>
-          <p className="max-w-[700px] text-muted-foreground md:text-lg">
+          <p className="max-w-[700px] text-gray-400 md:text-lg">
             I specialize in a range of technologies and skills to deliver high-quality web solutions.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-          {skills.map((skill, index) => (
-            <Card
-              key={index}
-              className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300 dark:bg-background/50 dark:backdrop-blur-sm"
-            >
-              <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                <div className="p-3 bg-primary/10 rounded-full">{skill.icon}</div>
-                <h3 className="text-xl font-bold">{skill.title}</h3>
-                <p className="text-muted-foreground">{skill.description}</p>
-              </CardContent>
-            </Card>
+        {/* Service Categories */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {skills.map((skill, idx) => (
+            <ServiceCategory
+              key={idx}
+              title={skill.title}
+              icon={skill.icon}
+              description={skill.description}
+            />
           ))}
         </div>
 
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-          <div className="flex flex-col items-center space-y-2">
-            <div className="text-4xl font-bold text-primary">90%</div>
-            <p className="text-muted-foreground text-center">HTML/CSS</p>
+        {/* Service Lists */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="space-y-4">
+            <ServiceItem title="Responsive Website Design" />
+            <ServiceItem title="Web UI Development" />
+            <ServiceItem title="Single Page Applications" />
+            <ServiceItem title="Performance Optimization" />
+            <ServiceItem title="Cross-Browser Compatibility" />
+            <ServiceItem title="Accessibility Enhancements" />
+            <ServiceItem title="Frontend Testing" />
           </div>
-          <div className="flex flex-col items-center space-y-2">
-            <div className="text-4xl font-bold text-primary">85%</div>
-            <p className="text-muted-foreground text-center">JavaScript</p>
+
+          <div className="space-y-4">
+            <ServiceItem title="API Development & Integration" />
+            <ServiceItem title="Database Design & Management" />
+            <ServiceItem title="Authentication & Authorization" />
+            <ServiceItem title="Server-Side Logic" />
+            <ServiceItem title="Security Implementation" />
+            <ServiceItem title="Backend Testing" />
+            <ServiceItem title="Deployment & Environment Setup" />
           </div>
-          <div className="flex flex-col items-center space-y-2">
-            <div className="text-4xl font-bold text-primary">80%</div>
-            <p className="text-muted-foreground text-center">React/Next.js</p>
-          </div>
-          <div className="flex flex-col items-center space-y-2">
-            <div className="text-4xl font-bold text-primary">75%</div>
-            <p className="text-muted-foreground text-center">Node.js</p>
+
+          <div className="space-y-4">
+            <ServiceItem title="Full Website Development" />
+            <ServiceItem title="MERN/MEVN Stack Projects" />
+            <ServiceItem title="Real-Time Features" />
+            <ServiceItem title="Authentication Systems" />
+            <ServiceItem title="File Upload & Media Handling" />
+            <ServiceItem title="API with Front-End Consumption" />
+            <ServiceItem title="Deployment & Maintenance" />
           </div>
         </div>
       </div>
     </section>
   )
 }
+
+function ServiceCategory({ title, icon, description }) {
+  return (
+    <div className="flex flex-col items-center text-center p-6 rounded-lg bg-[#202020] border border-[#232323] shadow-sm hover:shadow-md transition-shadow">
+      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-4">
+        {icon}
+      </div>
+      <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
+      <p className="text-gray-400">{description}</p>
+    </div>
+  )
+}
+
+function ServiceItem({ title }) {
+  return (
+    <div className="flex items-center p-3 rounded-lg border border-[#232323] bg-[#181818] hover:bg-[#232323] transition-colors">
+      <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary mr-3">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+      </div>
+      <span className="font-medium text-white">{title}</span>
+    </div>
+  )
+}
+

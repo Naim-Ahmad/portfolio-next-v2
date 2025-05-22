@@ -1,3 +1,4 @@
+import { Database, FileCode2, Layers } from "lucide-react";
 export const skillsData = [
   // Frontend
   {
@@ -183,4 +184,39 @@ const personalInfo = {
   facebook: "https://www.facebook.com/naim.ahmad.noyon",
 };
 
+export const services = [
+  {
+    icon: <FileCode2 className="h-10 w-10 text-primary" />,
+    title: "Frontend Development",
+    description:
+      "Building responsive and interactive user interfaces with React, Next.js, and modern CSS frameworks.",
+  },
+  {
+    icon: <Database className="h-10 w-10 text-primary" />,
+    title: "Backend Development",
+    description:
+      "Creating robust server-side applications with Node.js, Express, and MongoDB.",
+  },
+  // {
+  //   icon: <Code className="h-10 w-10 text-primary" />,
+  //   title: "JavaScript / TypeScript",
+  //   description: "Proficient in modern JavaScript and TypeScript for building scalable web applications.",
+  // },
+  {
+    icon: <Layers className="h-10 w-10 text-primary" />,
+    title: "Full Stack Development",
+    description:
+      "End-to-end development from database design to frontend implementation.",
+  },
+  // {
+  //   icon: <Figma className="h-10 w-10 text-primary" />,
+  //   title: "UI/UX Design",
+  //   description: "Creating intuitive and visually appealing user interfaces and experiences.",
+  // },
+  // {
+  //   icon: <Globe className="h-10 w-10 text-primary" />,
+  //   title: "Web Performance",
+  //   description: "Optimizing websites for speed, accessibility, and search engine visibility.",
+  // },
+];
 export default personalInfo;

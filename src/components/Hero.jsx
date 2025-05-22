@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-3 items-center">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Web Developer</div>
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-5xl">
+            <h1 className="text-4xl h-18 sm:h-auto font-bold tracking-tighter md:text-5xl">
               Hello, I'm <TypeEffect titles={['Naim Ahmad', 'a full stack developer']}/>
             </h1>
             <p className="max-w-[700px] text-muted-foreground md:text-xl">

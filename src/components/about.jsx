@@ -40,7 +40,7 @@ export default function About() {
               Next.js, but I'm also proficient in backend technologies.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 pt-4">
+            <div className="grid  sm:grid-cols-2 gap-4 pt-4">
               <div>
                 <p className="font-medium">Name:</p>
                 <p className="text-muted-foreground">{personalInfo.name}</p>

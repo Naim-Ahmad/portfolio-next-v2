@@ -4,16 +4,17 @@ export default function Services() {
   
 
   return (
-    <section id="skills" className="py-20 bg-black text-white">
+    <section id="service" className="py-20 bg-black text-white">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-black">My Skills</div>
+            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-black">My Services</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What I Do</h2>
             <div className="mx-auto h-1 w-20 bg-primary"></div>
           </div>
           <p className="max-w-[700px] text-gray-400 md:text-lg">
-            I specialize in a range of technologies and skills to deliver high-quality web solutions.
+            My services
+            encompass both frontend and backend development, ensuring a seamless experience for users.
           </p>
         </div>
 

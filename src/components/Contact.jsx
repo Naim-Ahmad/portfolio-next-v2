@@ -80,7 +80,7 @@ export default function Contact() {
           </Card>
         </div>
 
-        <div className="flex gap-8 mt-12 ">
+        <div className="flex flex-col lg:flex-row gap-8 mt-12 ">
           <div className="flex-1">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d58960.521867817115!2d91.8295113!3d22.5404509!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1670678585616!5m2!1sen!2sbd"

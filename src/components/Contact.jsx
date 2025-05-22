@@ -1,39 +1,11 @@
-"use client"
 
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import personalInfo from "@/data"
 import { Mail, MapPin, Phone } from "lucide-react"
-import { useState } from "react"
+import MessageForm from "./MessageForm"
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  })
-
-  const handleChange = (e) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend or email service
-    console.log("Form submitted:", formData)
-    alert("Thank you for your message! I'll get back to you soon.")
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    })
-  }
-
+ 
   return (
     <section id="contact" className="py-20">
       <div className="container px-4 md:px-6 mx-auto">
@@ -91,70 +63,7 @@ export default function Contact() {
 
           <Card className="dark:bg-background/50 dark:backdrop-blur-sm flex-1">
             <CardContent className="p-6 sm:p-10">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm font-medium">
-                      Your Name
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="John Doe"
-                      required
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm font-medium">
-                      Your Email
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="john@example.com"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm font-medium">
-                    Subject
-                  </label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    placeholder="Project Inquiry"
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Your Message
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Hello, I'd like to talk about..."
-                    rows={6}
-                    required
-                  />
-                </div>
-
-                <Button type="submit" size="lg" className="w-full md:w-auto">
-                  Send Message
-                </Button>
-              </form>
+              <MessageForm />
             </CardContent>
           </Card>
         </div>

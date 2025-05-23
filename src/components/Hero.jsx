@@ -11,7 +11,7 @@ export default function Hero() {
       <div className="container px-4 md:px-6 mx-auto relative z-10">
         <div className="grid gap-6 lg:grid-cols-[2fr_1fr] lg:gap-3 items-center">
           <div className="space-y-4">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Web Developer</div>
+            <div className="inline-block rounded-lg px-3 py-1 text-sm bg-primary/10 text-primary">Web Developer</div>
             <h1 className="text-4xl h-18 sm:h-auto font-bold tracking-tighter md:text-5xl">
               Hello, I'm <TypeEffect titles={['Naim Ahmad', 'a full stack developer']}/>
             </h1>
@@ -83,8 +83,8 @@ export default function Hero() {
       </div>
 
       {/* Background elements */}
-      <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/25 dark:bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl"></div>
     </section>
   )
 }

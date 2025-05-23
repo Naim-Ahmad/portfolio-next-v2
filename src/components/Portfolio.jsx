@@ -31,7 +31,7 @@ export default function Portfolio() {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">My Work</div>
+            <div className="inline-block rounded-lg bg-primary/10 text-primary px-3 py-1 text-sm">My Work</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Recent Projects</h2>
             <div className="mx-auto h-1 w-20 bg-primary"></div>
           </div>
@@ -45,12 +45,12 @@ export default function Portfolio() {
             <TabsTrigger value="account">Account</TabsTrigger>
             <TabsTrigger value="password">Password</TabsTrigger>
           </TabsList> */}
-          <TabsList className="mx-auto rounded-full">
+          <TabsList className="mx-auto rounded-full mb-6 bg-gray-100 border border-gray-200 p-1 flex gap-2 w-fit">
             {categories.map((cat) => (
               <TabsTrigger
                 key={cat}
                 value={cat}
-                className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground rounded-full px-3 cursor-pointer py-2"
+                className="data-[state=active]:bg-primary data-[state=active]:text-white bg-white text-gray-600 rounded-full px-4 py-2 font-medium transition-colors border border-transparent data-[state=active]:border-primary"
               >
                 {cat}
               </TabsTrigger>

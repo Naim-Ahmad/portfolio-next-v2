@@ -10,7 +10,7 @@ export default function About() {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About Me</div>
+            <div className="inline-block rounded-lg px-3 py-1 bg-primary/10 text-primary text-sm">About Me</div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Know Me More</h2>
             <div className="mx-auto h-1 w-20 bg-primary"></div>
           </div>

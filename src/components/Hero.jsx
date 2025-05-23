@@ -69,10 +69,10 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative lg:ml-auto">
-            <div className="relative w-full aspect-square md:w-[400px] rounded-full overflow-hidden border-4 border-primary/20">
+            <div className="relative w-full aspect-square md:w-[400px] xl:w-[550] rounded-full overflow-hidden border-4 border-primary/20">
               <Image src={profileImage} alt="Profile" fill className="object-cover" placeholder="blur" priority />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-background p-4 rounded-lg shadow-lg">
+            <div className="absolute -bottom-2 left-2 bg-background p-4 rounded-lg shadow-lg">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span className="font-medium">Available for work</span>

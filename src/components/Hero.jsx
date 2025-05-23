@@ -9,13 +9,13 @@ export default function Hero() {
   return (
     <section id="home" className="py-20 md:py-32 relative overflow-hidden">
       <div className="container px-4 md:px-6 mx-auto relative z-10">
-        <div className="grid gap-6 lg:grid-cols-2 lg:gap-3 items-center">
+        <div className="grid gap-6 lg:grid-cols-[2fr_1fr] lg:gap-3 items-center">
           <div className="space-y-4">
             <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Web Developer</div>
             <h1 className="text-4xl h-18 sm:h-auto font-bold tracking-tighter md:text-5xl">
               Hello, I'm <TypeEffect titles={['Naim Ahmad', 'a full stack developer']}/>
             </h1>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="max-w-[900px] text-muted-foreground md:text-xl">
               A passionate web developer creating beautiful and functional websites. I specialize in frontend
               development with React and Next.js, and in backend development with Node.js and Express.
             </p>

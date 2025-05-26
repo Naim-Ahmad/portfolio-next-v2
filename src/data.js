@@ -76,39 +76,10 @@ export const testimonials = [
       "Naim Ahmad delivered an exceptional website for our startup. His attention to detail and ability to understand our requirements was impressive. The final product exceeded our expectations.",
   },
   {
-    name: "Michael Chen",
-    position: "Marketing Director, GrowthLabs",
-    avatar: "/placeholder.svg?height=40&width=40",
-    content:
-      "Working with John was a pleasure. He's not only technically skilled but also has a great eye for design. Our website conversion rate increased by 40% after his redesign.",
-  },
-  {
-    name: "Emily Rodriguez",
-    position: "Founder, Creative Studio",
-    avatar: "/placeholder.svg?height=40&width=40",
-    content:
-      "John is a talented developer who brings ideas to life. He created a portfolio website for our studio that perfectly captures our brand identity and showcases our work beautifully.",
-  },
-  {
-    name: "David Kim",
-    position: "Product Manager, SaaS Platform",
-    avatar: "/placeholder.svg?height=40&width=40",
-    content:
-      "We hired John to develop a complex web application, and he delivered it on time and within budget. His technical expertise and problem-solving skills are outstanding.",
-  },
-  {
-    name: "Ayesha Rahman",
-    position: "CTO, FinTechX",
-    avatar: "/placeholder.svg?height=40&width=40",
-    content:
-      "John's professionalism and technical knowledge are top-notch. He built a secure and scalable platform for us.",
-  },
-  {
-    name: "Alex Lee",
-    position: "Lead Designer, PixelWorks",
-    avatar: "/placeholder.svg?height=40&width=40",
-    content:
-      "The collaboration with John was smooth and productive. He translated our designs into a beautiful, functional site.",
+    name: "Md. Mahamodul Hasan",
+    position: "Project Manager at Cooking Station",
+    avatar: "/assets/profilePic/MahmudulHasan.jpeg",
+    content: `Naim Ahmad is an exceptional MERN Stack Developer with a deep understanding of MongoDB, Express.js, React.js, and Node.js. I had the pleasure of working with him on Cooking Station where he consistently demonstrated a high level of technical proficiency and problem-solving skills.`,
   },
 ];
 

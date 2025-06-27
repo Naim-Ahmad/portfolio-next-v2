@@ -275,7 +275,7 @@ const personalInfo = {
   github: "https://github.com/Naim-Ahmad",
   linkedin: "https://www.linkedin.com/in/naim-ahmad-developer/",
   resume:
-    "https://drive.google.com/file/d/182GSKdky8-Ba7fHNHS44QPPr3OBKxKeL/view?pli=1",
+    "https://drive.google.com/file/d/1TungZto2F7HCv-6njFZpHenxW_IJ52O6/view?usp=drive_link",
   facebook: "https://www.facebook.com/naim.ahmad.noyon",
 };
 export default personalInfo;

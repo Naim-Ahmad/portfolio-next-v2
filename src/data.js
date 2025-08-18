@@ -28,7 +28,7 @@ export const projects = [
       "CodeSync Station is an IT consultancy start-up that officially began operations in January 2024. The website serves as more than just a portfolio—it includes a robust management system accessible through a user-friendly dashboard for two types of users: Normal Users and Admins..",
     short:
       " A management system for an IT consultancy start-up with user-friendly dashboard.",
-    demoLink: "https://landandbuild.uk",
+    demoLink: "https://codesyncstation.com",
     githubLink: "#",
     skills: ["Next.js", "SCSS"],
   },

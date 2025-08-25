@@ -69,6 +69,19 @@ export const projects = [
 // reviews
 export const testimonials = [
   {
+    name: "Arnaud Lafosse",
+    position: "Client at Upwork",
+    avatar: "/assets/profilePic/ArnaudLafosse.jpeg",
+    content: `Naim quickly identified and fixed my Supabase password reset problem. Great communication, professional approach, and delivered exactly what was needed. Would definitely hire again for future Supabase projects.
+Highly recommended!`,
+  },
+  {
+    name: "James Conner",
+    position: "Client at Upwork",
+    avatar: "/assets/profilePic/JamesConner.jpeg",
+    content: `Naim was excellent to work with. He was immediately available to assist with my project and went above and beyond to provide provide followup answers on questions after our consultation.`,
+  },
+  {
     name: "A K M Jubaeir Islam",
     position: "Cofounder & CTO at MashLabz",
     avatar: "/assets/profilePic/zuby.jpeg",

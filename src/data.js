@@ -102,16 +102,16 @@ export const experiences = [
     title: "Frontend Developer",
     company: "Freelancer",
     location: "Remote",
-    period: "Jan 2024 - Present",
+    period: "Jan 2025 - Present",
     description:
       "Developing and maintaining responsive web applications using React, Next.js, and Tailwind CSS. Collaborated with designers and backend developers to deliver seamless user experiences.",
     icon: <Briefcase className="h-6 w-6 text-primary" />,
   },
   {
     title: "Front-end Developer",
-    company: "CodeSync Station",
+    company: "Cooking Station",
     location: "Remote",
-    period: "Jan 2022 - Dec 2023",
+    period: "Jan 2024 - Dec 2024",
     description:
       "Built and deployed full-stack web solutions using MERN stack. Implemented authentication, REST APIs, and real-time features for client projects.",
     icon: <Briefcase className="h-6 w-6 text-primary" />,
@@ -120,7 +120,7 @@ export const experiences = [
     title: "Complete Web Development Course",
     company: "Programming Hero",
     location: "Dhaka, Bangladesh",
-    period: "2021 - 2022",
+    period: "July 2023 - Dec 2023",
     description:
       "Completed a comprehensive web development course covering HTML, CSS, JavaScript, React, Node.js, and MongoDB.",
     icon: <GraduationCap className="h-6 w-6 text-primary" />,
@@ -281,7 +281,7 @@ const personalInfo = {
   dateOfBirth: "2001-11-26",
   title: "Full Stack Web Developer",
   phone: "+880 1625-366735",
-  careerStartDate: "2021-02-01",
+  careerStartDate: "2023-06-01",
   location: "Jessore, Bangladesh",
   about: "I'm a full-stack developer specialized in MERN stack and WebRTC.",
   email: "naimahmad201103@proton.me",

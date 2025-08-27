@@ -120,7 +120,7 @@ export const experiences = [
     title: "Complete Web Development Course",
     company: "Programming Hero",
     location: "Dhaka, Bangladesh",
-    period: "July 2023 - Dec 2023",
+    period: "June 2023 - Dec 2023",
     description:
       "Completed a comprehensive web development course covering HTML, CSS, JavaScript, React, Node.js, and MongoDB.",
     icon: <GraduationCap className="h-6 w-6 text-primary" />,

@@ -284,7 +284,7 @@ const personalInfo = {
   careerStartDate: "2023-06-01",
   location: "Jessore, Bangladesh",
   about: "I'm a full-stack developer specialized in MERN stack and WebRTC.",
-  email: "naimahmad201103@proton.me",
+  email: "dev@naimahmad.pro",
   github: "https://github.com/Naim-Ahmad",
   linkedin: "https://www.linkedin.com/in/naim-ahmad-developer/",
   resume:

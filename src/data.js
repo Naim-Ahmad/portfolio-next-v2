@@ -9,6 +9,52 @@ import {
 // projects
 export const projects = [
   {
+    title: "iP Residential - VPN & RDP Management Platform",
+    category: "SaaS",
+    image: "/assets/projects/IP/Hide-My-IP-Ip-Residential-10-23-2025_03_51_PM.png?height=300&width=400",
+    description: `Overview:
+iP Residential is a subscription-based web platform that allows users to purchase and manage VPN (WireGuard & L2TP) and RDP services. The system includes robust user and admin dashboards, automated payment processing, and real-time customer support integration.
+
+Key Features:
+
+Modern and responsive landing pages
+
+Secure authentication system
+
+Stripe payment integration for seamless checkout
+
+Dedicated user and admin dashboards
+
+Subscription management for VPN and RDP plans
+
+Plan, router, and location management
+
+API settings for backend communication
+
+Tawk.to integration for live support and ticketing
+
+RDP management for service control and monitoring
+
+My Role & Responsibilities:
+As the Frontend Developer, I was responsible for:
+
+Converting Figma designs into a functional Next.js application
+
+Ensuring SEO-friendly and high-performance implementation
+
+Handling API integration for dynamic data flow
+
+Collaborating closely with the backend team to maintain consistent functionality and smooth user experience
+
+Tech Stack:
+Next.js, React, Tailwind CSS, Redux, Stripe API, Tawk.to`,
+    short:
+      "A subscription-based platform for managing VPN and RDP services with user and admin dashboards.",
+    demoLink: "https://ip-res.mashlabz.com/",
+    githubLink: "#",
+    skills: ["Next.js", "Tailwind CSS", "Redux" ],
+  },
+  {
     title: "Real Estate & Development Website for Land & Build UK ",
     category: "Portfolio",
     image: "/assets/projects/landandbuild.jpg?height=300&width=400",
@@ -22,7 +68,7 @@ export const projects = [
   },
   {
     title: "Code Sync station - IT consulting company",
-    category: "Web Application",
+    category: "SaaS",
     image: "/assets/projects/codeSync.jpg?height=300&width=400",
     description:
       "CodeSync Station is an IT consultancy start-up that officially began operations in January 2024. The website serves as more than just a portfolio—it includes a robust management system accessible through a user-friendly dashboard for two types of users: Normal Users and Admins..",
@@ -46,7 +92,7 @@ export const projects = [
   },
   {
     title: "Digital Dropout - Learning Management System",
-    category: "LMS",
+    category: "SaaS",
     image: "/assets/projects/dropout.png?height=300&width=400",
     description: `🔍 Overview: I collaborated with Rafayat Rakib, a renowned influencer and freelancer, to develop Digital Dropout, a cutting-edge Learning Management System (LMS). This platform is designed to revolutionize online education by providing a seamless experience for content creators and learners alike.
       🎯 Objective: The goal was to create a user-friendly LMS that allows content creators to easily upload and manage their courses, while providing learners with an intuitive interface for accessing educational materials.`,
